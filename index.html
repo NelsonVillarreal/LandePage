@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Lade Page</title>
+</head>
+
+<body>
+  <!--Inicio secao-->
+  <section class="sec">
+
+    <header>
+      <a href=""><img src="imagens/logo.png" alt=""></imag></a>
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">PRODUCT</a></li>
+        <li><a href="">WHAT's NEWS</a></li>
+        <li><a href="">NEWSLESTHER</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </header>
+    <!--Fim Header-->
+
+    <!--Inici Content-->
+    <div class="content">
+
+      <!--Inici TextBox-->
+      <div class="textbox">
+
+        <h2>That's whats<span>I Like</span></h2>
+        <p>One of the world's leading soft drink brands, alongside its archrival Coca-Cola, Pepsi has completed 60 years
+          of activity in the Brazilian market. The company has always invested a lot in communication. Whether in
+          regional or global campaigns, the incidence of major productions and famous celebrities in their commercials
+          is remarkable.</p>
+        <a href="#">View all Products</a>
+      </div>
+      <!--Fim TextBox-->
+
+      <!--Inici ImgBox-->
+      <div class="imgbox">
+
+
+        <img src="imagens/pepsi001.png" alt="" class="pepsi">
+      </div>
+      <!--Fim ImgBox-->
+
+    </div>
+    <!--Fim Content-->
+
+    <!--inicio thumb-->
+    <ul class="thumb">
+      <!--inicio do thumb-->
+      <li><img src="imagens/pepsi001.png" onclick="imgSlider('imagens/pepsi001.png');changeBgcolor('#0062be')"></li>
+      <li><img src="imagens/pepsi002.png" onclick="imgSlider('imagens/pepsi002.png');changeBgcolor('#e60c2c')"></li>
+      <li><img src="imagens/pepsi003.png" onclick="imgSlider('imagens/pepsi003.png');changeBgcolor('#1e1e1e')"></li>
+
+    </ul>
+    <!--fim do thumb-->
+
+    <!--Inicicio sci-->
+    <ul class="sci">
+      <li><a href=""><img src="imagens/facebook.png"></a></li>
+      <li><a href=""><img src="imagens/instagram.png"></a></li>
+      <li><a href=""><img src="imagens/twitter.png"></a></li>
+    </ul>
+    <!--fim do sci-->
+
+  </section>
+  <!--fim secao-->
+
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector('.pepsi').src = anything;
+    }
+    function changeBgcolor(color) {
+      const sec = document.querySelector('.sec');
+      sec.style.background = color;
+    }
+
+  </script>
+</body>
+
+</html>
